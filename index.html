@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="clipBQ keeps your clipboard history in one place across Linux, macOS, Windows, Android, and iOS." />
+  <title>clipBQ — Your clipboard, everywhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <rect x="9" y="8" width="30" height="34" rx="7" fill="#F8FAFD" />
+            <rect x="15" y="4" width="18" height="10" rx="5" fill="#0294FD" />
+            <circle cx="24" cy="9" r="2.8" fill="#071023" />
+            <path d="M16 21l3.5 3.5L25 19" fill="none" stroke="#0294FD" stroke-width="3.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M28 22h7" stroke="#0D1733" stroke-width="3" stroke-linecap="round" />
+            <path d="M16 30l3.5 3.5L25 28" fill="none" stroke="#0294FD" stroke-width="3.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M28 31h7" stroke="#0D1733" stroke-width="3" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span>clip<span>BQ</span></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#platforms">Platforms</a>
+        <a class="nav-cta" href="#download">Get clipBQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Your clipboard, everywhere</div>
+          <h1>Stop chasing<br><em>your clipboard.</em></h1>
+          <p class="hero-text">
+            clipBQ keeps your clipboard history in one place, so the text, links,
+            code, and snippets you copy on one device are there when you need them
+            on another.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download">Get started <span>→</span></a>
+            <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+          </div>
+
+          <div class="platform-line">
+            <span>Works across</span>
+            <div class="platforms-mini">
+              <span>Linux</span><b>·</b><span>macOS</span><b>·</b><span>Windows</span><b>·</b><span>Android</span><b>·</b><span>iOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="clipboard-demo-wrap">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="clipboard-window">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>clipBQ</span>
+              <button class="search-btn" aria-label="Search clipboard">⌕</button>
+            </div>
+
+            <div class="window-body">
+              <div class="window-heading">
+                <div>
+                  <small>CLIPBOARD</small>
+                  <h3>Recent clips</h3>
+                </div>
+                <span class="count">12 items</span>
+              </div>
+
+              <div class="clip-card active">
+                <div class="clip-icon blue">⌘</div>
+                <div class="clip-content">
+                  <strong>Deploy to production</strong>
+                  <p>kubectl apply -f deployment.yaml</p>
+                  <small>Just now · Linux</small>
+                </div>
+                <button class="copy-chip" data-copy="kubectl apply -f deployment.yaml">Copy</button>
+              </div>
+
+              <div class="clip-card">
+                <div class="clip-icon purple">↗</div>
+                <div class="clip-content">
+                  <strong>Project dashboard</strong>
+                  <p>app.clipbq.com/dashboard</p>
+                  <small>4 min ago · macOS</small>
+                </div>
+                <button class="copy-chip" data-copy="app.clipbq.com/dashboard">Copy</button>
+              </div>
+
+              <div class="clip-card">
+                <div class="clip-icon green">Aa</div>
+                <div class="clip-content">
+                  <strong>Meeting notes</strong>
+                  <p>Ship it. Then make it better.</p>
+                  <small>18 min ago · Android</small>
+                </div>
+                <button class="copy-chip" data-copy="Ship it. Then make it better.">Copy</button>
+              </div>
+
+              <div class="sync-badge"><span>✓</span> Synced across your devices</div>
+            </div>
+          </div>
+
+          <div class="floating-device device-phone">
+            <div class="device-notch"></div>
+            <div class="device-screen">
+              <small>clipBQ</small>
+              <strong>Copied!</strong>
+              <p>Your clip is ready everywhere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" id="platforms">
+      <div class="container">
+        <p>ONE CLIPBOARD. ALL YOUR DEVICES.</p>
+        <div class="platform-grid">
+          <div><span>◉</span> Linux</div>
+          <div><span>⌘</span> macOS</div>
+          <div><span>⊞</span> Windows</div>
+          <div><span>◈</span> Android</div>
+          <div><span>●</span> iOS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> Why clipBQ</div>
+          <h2>Copy once.<br><span>Use it anywhere.</span></h2>
+          <p>Because copying something twice is already one time too many.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card featured">
+            <div class="feature-number">01</div>
+            <div class="feature-icon">⌘</div>
+            <h3>Everything in one place</h3>
+            <p>Keep your clipboard history organized instead of losing useful snippets every time you copy something
+              new.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-number">02</div>
+            <div class="feature-icon">↔</div>
+            <h3>Move between devices</h3>
+            <p>Copy on your laptop. Pick it up on your phone. Keep your workflow moving without the awkward middleman.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-number">03</div>
+            <div class="feature-icon">⌕</div>
+            <h3>Find what you copied</h3>
+            <p>Turn your clipboard into a useful history instead of a tiny, temporary memory that disappears after one
+              copy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow" id="how-it-works">
+      <div class="container workflow-grid">
+        <div class="workflow-copy">
+          <div class="eyebrow"><span></span> Simple by design</div>
+          <h2>Your workflow,<br><span>without the friction.</span></h2>
+          <p>
+            clipBQ gets out of the way and lets your clipboard do what it should:
+            follow you. No more emailing yourself a link, messaging yourself a snippet,
+            or wondering where that one piece of text went.
+          </p>
+
+          <div class="steps">
+            <div class="step">
+              <b>01</b>
+              <div><strong>Copy</strong>
+                <p>Copy something like you normally do.</p>
+              </div>
+            </div>
+            <div class="step">
+              <b>02</b>
+              <div><strong>clipBQ remembers</strong>
+                <p>Your clipboard history stays organized.</p>
+              </div>
+            </div>
+            <div class="step">
+              <b>03</b>
+              <div><strong>Paste anywhere</strong>
+                <p>Find it from another device when you need it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="workflow-art">
+          <div class="connection-line"></div>
+          <div class="workflow-card card-left">
+            <span class="device-symbol">▰</span>
+            <strong>Work laptop</strong>
+            <small>Copied a URL</small>
+          </div>
+          <div class="workflow-card card-center">
+            <span class="brand-dot">BQ</span>
+            <strong>clipBQ</strong>
+            <small>Synced</small>
+          </div>
+          <div class="workflow-card card-right">
+            <span class="device-symbol">▯</span>
+            <strong>Your phone</strong>
+            <small>Ready to paste</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="download">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-glow"></div>
+          <div class="eyebrow"><span></span> Your clipboard just got smarter</div>
+          <h2>Copy less.<br><em>Get more done.</em></h2>
+          <p>Bring your clipboard with you — wherever you work.</p>
+          <div class="download-buttons">
+            <a class="download-btn" href="#"><small>Download for</small><strong>Linux</strong></a>
+            <a class="download-btn" href="#"><small>Download for</small><strong>macOS</strong></a>
+            <a class="download-btn" href="#"><small>Download for</small><strong>Windows</strong></a>
+            <a class="download-btn" href="#"><small>Get it on</small><strong>Android</strong></a>
+            <a class="download-btn" href="#"><small>Download on the</small><strong>App Store</strong></a>
+          </div>
+          <p class="fine-print">Downloads will be available here when your release links are ready.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark small" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <rect x="9" y="8" width="30" height="34" rx="7" fill="#F8FAFD" />
+            <rect x="15" y="4" width="18" height="10" rx="5" fill="#0294FD" />
+            <circle cx="24" cy="9" r="2.8" fill="#071023" />
+          </svg>
+        </span>
+        <span>clip<span>BQ</span></span>
+      </a>
+      <p>One clipboard. Everywhere.</p>
+      <span class="copyright">© 2026 clipBQ</span>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite">Copied to your clipboard</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
