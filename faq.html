@@ -4,17 +4,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>clipBQ — Your clipboard, everywhere</title>
+  <meta name="title" content="clipBQ — Installation Guide & Frequently Asked Questions (FAQs)" />
   <meta name="description"
-    content="clipBQ installation guide and frequently asked questions for Linux, macOS, Windows, Android and iOS." />
-  <title>clipBQ — Installation & FAQs</title>
+    content="Find installation guides for Linux, macOS, Windows, Android, and iOS alongside answers to common questions about clipBQ sync, security, and usage." />
+  <meta name="keywords"
+    content="clipBQ help, install clipBQ, clipboard manager FAQ, clipBQ guide, cloud clipboard setup" />
+  <meta name="author" content="clipBQ" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://clipbq.github.io/faq.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://clipbq.github.io/faq.html" />
+  <meta property="og:title" content="clipBQ — Installation Guide & FAQs" />
+  <meta property="og:description"
+    content="Learn how to install and configure clipBQ on Linux, macOS, Windows, Android, and iOS." />
+  <meta property="og:image" content="https://clipbq.github.io/clipBQ-logo.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://clipbq.github.io/faq.html" />
+  <meta property="twitter:title" content="clipBQ — Installation Guide & FAQs" />
+  <meta property="twitter:description"
+    content="Learn how to install and configure clipBQ on Linux, macOS, Windows, Android, and iOS." />
+  <meta property="twitter:image" content="https://clipbq.github.io/clipBQ-logo.png" />
+
+  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="faq.css" />
+
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+
+  <!-- JSON-LD Structured Data for FAQ Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is clipBQ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "clipBQ is a cross-platform clipboard manager designed to keep your clipboard history in one place across Linux, macOS, Windows, Android, and iOS."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. An account allows clipBQ to associate your clipboard history with you and synchronize it across your devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my clipboard history private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "clipBQ enforces access security via Cloud database Row Level Security. Data is protected with encryption and retention controls."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -44,10 +106,10 @@
       <p>Install clipBQ on your computer or phone, sign in, and your clipboard history can follow you wherever you work.
       </p>
 
-      <!-- <div class="search">
+      <div class="search">
         <span>⌕</span>
-        <input id="faqSearch" type="search" placeholder="Search installation & FAQs..." aria-label="Search FAQs">
-      </div> -->
+        <input id="faqSearch" type="search" placeholder="Search Installation Guide & FAQs..." aria-label="Search FAQs">
+      </div>
     </div>
   </section>
 
@@ -225,9 +287,17 @@
               features.</p>
           </details>
           <details>
-            <summary>What permissions does clipBQ need?</summary>
-            <p>clipBQ requests minimum permissions required for clipboard monitoring and synchronization based on OS
-              features.</p>
+            <summary>Is this app supported on iOS?</summary>
+            <p>Due to security policies that Apple has on iOS devices regarding clipboard copying and sharing
+              , development for this release has been paused, and an app for this platform is not available for now.
+            </p>
+          </details>
+          <details>
+            <summary>Why is the app not working on macOS?</summary>
+            <p>Because this app is built through an automated CI pipeline and is not digitally signed by Apple,
+              macOS will block it by default. If you see a "damaged file" or "unverified developer" warning,
+              use the command <code>xattr -cr /Applications/clipBQ.app</code> to bypass Gatekeeper Bypass after
+              downloading and unzipping the clipBQ.app file</p>
           </details>
           <details>
             <summary>How do I get help?</summary>

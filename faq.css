@@ -36,7 +36,6 @@ a {
     margin: auto;
 }
 
-/* Header & Navigation Mobile First */
 .site-header {
     position: fixed;
     inset: 0 0 auto;
@@ -113,7 +112,6 @@ a {
     background: rgba(2, 148, 253, .10);
 }
 
-/* Hero */
 .hero {
     padding: 100px 0 45px;
     text-align: center;
@@ -185,7 +183,7 @@ h1 span {
     font-size: 20px;
 }
 
-/* Main Content */
+
 main {
     padding-bottom: 60px;
 }
@@ -340,6 +338,11 @@ main {
 
 details {
     border-bottom: 1px solid var(--line);
+}
+
+code {
+    font-weight: bold;
+    color: var(--blue);
 }
 
 summary {
