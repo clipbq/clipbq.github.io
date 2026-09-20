@@ -1,42 +1,52 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+document.addEventListener('DOMContentLoaded', () => {
 
-menuToggle?.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", open);
-});
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuToggle?.setAttribute("aria-expanded", "false");
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const copyChips = document.querySelectorAll('.copy-chip');
+  const toast = document.querySelector('.toast');
+
+  copyChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const textToCopy = chip.getAttribute('data-copy');
+      if (textToCopy) {
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          if (toast) {
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+          }
+        }).catch(err => {
+          console.error('Failed to copy text: ', err);
+        });
+      }
+    });
   });
-});
 
-const toast = document.querySelector(".toast");
+  const faqSearch = document.getElementById('faqSearch');
+  const faqItems = document.querySelectorAll('#faqList details');
 
-document.querySelectorAll(".copy-chip").forEach(button => {
-  button.addEventListener("click", async () => {
-    const text = button.dataset.copy;
-
-    try {
-      await navigator.clipboard.writeText(text);
-      button.textContent = "Copied!";
-      toast.textContent = "Copied to your clipboard";
-    } catch {
-      button.textContent = "Done";
-      toast.textContent = "Demo action complete";
-    }
-
-    toast.classList.add("show");
-
-    setTimeout(() => {
-      toast.classList.remove("show");
-      button.textContent = "Copy";
-    }, 1400);
-  });
-});
-
-document.querySelectorAll('a[href="#"]').forEach(link => {
-  link.addEventListener("click", event => event.preventDefault());
+  if (faqSearch && faqItems.length > 0) {
+    faqSearch.addEventListener('input', () => {
+      const query = faqSearch.value.trim().toLowerCase();
+      faqItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.classList.toggle('hidden', query !== '' && !text.includes(query));
+      });
+    });
+  }
 });
