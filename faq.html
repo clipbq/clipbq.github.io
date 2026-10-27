@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>clipBQ — Your clipboard, everywhere</title>
+  <meta name="title" content="clipBQ — Installation Guide & Frequently Asked Questions (FAQs)" />
+  <meta name="description"
+    content="Find installation guides for Linux, macOS, Windows, Android, and iOS alongside answers to common questions about clipBQ sync, security, and usage." />
+  <meta name="keywords"
+    content="clipBQ help, install clipBQ, clipboard manager FAQ, clipBQ guide, cloud clipboard setup" />
+  <meta name="author" content="clipBQ" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://clipbq.github.io/faq.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://clipbq.github.io/faq.html" />
+  <meta property="og:title" content="clipBQ — Installation Guide & FAQs" />
+  <meta property="og:description"
+    content="Learn how to install and configure clipBQ on Linux, macOS, Windows, Android, and iOS." />
+  <meta property="og:image" content="https://clipbq.github.io/clipBQ-logo.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://clipbq.github.io/faq.html" />
+  <meta property="twitter:title" content="clipBQ — Installation Guide & FAQs" />
+  <meta property="twitter:description"
+    content="Learn how to install and configure clipBQ on Linux, macOS, Windows, Android, and iOS." />
+  <meta property="twitter:image" content="https://clipbq.github.io/clipBQ-logo.png" />
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="faq.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- JSON-LD Structured Data for FAQ Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is clipBQ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "clipBQ is a cross-platform clipboard manager designed to keep your clipboard history in one place across Linux, macOS, Windows, Android, and iOS."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. An account allows clipBQ to associate your clipboard history with you and synchronize it across your devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my clipboard history private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "clipBQ enforces access security via Cloud database Row Level Security. Data is protected with encryption and retention controls."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="clipBQ-logo.png" alt="clipBQ icon">
+        <span>clip<b>BQ</b></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#home">About</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="#faq">FAQs</a>
+        <a href="#install">Installation</a>
+        <a class="nav-cta" href="index.html#download">Get clipBQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow"><i></i> Help centre</div>
+      <h1>Get clipBQ <span>up and running.</span></h1>
+      <p>Install clipBQ on your computer or phone, sign in, and your clipboard history can follow you wherever you work.
+      </p>
+
+      <div class="search">
+        <span>⌕</span>
+        <input id="faqSearch" type="search" placeholder="Search Installation Guide & FAQs..." aria-label="Search FAQs">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="install">
+      <div class="container">
+        <h2>Install clipBQ on your devices</h2>
+        <p class="section-intro">Choose your platform below. The exact download package or store link can be updated
+          when your production releases are published.</p>
+
+        <div class="platform-grid">
+          <a class="platform" href="#windows"><span
+              class="icon">⊞</span><strong>Windows</strong><small>Desktop</small></a>
+          <a class="platform" href="#macos"><span class="icon">⌘</span><strong>macOS</strong><small>Desktop</small></a>
+          <a class="platform" href="#linux"><span class="icon">◉</span><strong>Linux</strong><small>Desktop</small></a>
+          <a class="platform" href="#android"><span
+              class="icon">◈</span><strong>Android</strong><small>Mobile</small></a>
+          <a class="platform" href="#android"><span class="icon">●</span><strong>iPhone /
+              iPad</strong><small>Mobile</small></a>
+        </div>
+
+        <div class="install-grid">
+          <article class="install-card" id="windows">
+            <h3>Windows</h3>
+            <p>Install the desktop client and keep clipBQ available while you work.</p>
+            <ol class="steps">
+              <li><b>01</b>
+                <div><strong>Download clipBQ</strong><span>Use the Windows download link from your clipBQ release
+                    page.</span></div>
+              </li>
+              <li><b>02</b>
+                <div><strong>Run the installer</strong><span>Open the downloaded installer and follow the setup
+                    prompts.</span></div>
+              </li>
+              <li><b>03</b>
+                <div><strong>Sign in</strong><span>Launch clipBQ and sign in with your account.</span></div>
+              </li>
+              <li><b>04</b>
+                <div><strong>Start copying</strong><span>New clipboard text can be captured and synced to your
+                    account.</span></div>
+              </li>
+            </ol>
+            <a class="download" href="index.html#download">Download for Windows</a>
+          </article>
+
+          <article class="install-card" id="macos">
+            <h3>macOS</h3>
+            <p>Bring your clipboard history to your Mac and keep it synced with your other devices.</p>
+            <ol class="steps">
+              <li><b>01</b>
+                <div><strong>Download clipBQ</strong><span>Download the macOS release provided by clipBQ.</span></div>
+              </li>
+              <li><b>02</b>
+                <div><strong>Install the app</strong><span>Open the downloaded package and move or install clipBQ as
+                    instructed.</span></div>
+              </li>
+              <li><b>03</b>
+                <div><strong>Allow required permissions</strong><span>If macOS asks for clipboard or accessibility
+                    permissions, approve them.</span></div>
+              </li>
+              <li><b>04</b>
+                <div><strong>Sign in and sync</strong><span>Sign in to begin accessing your clipboard history.</span>
+                </div>
+              </li>
+            </ol>
+            <a class="download" href="index.html#download">Download for macOS</a>
+          </article>
+
+          <article class="install-card" id="linux">
+            <h3>Linux</h3>
+            <p>Install the Linux build appropriate for your distribution and desktop environment.</p>
+            <ol class="steps">
+              <li><b>01</b>
+                <div><strong>Download the Linux release</strong><span>Choose the package supplied for your Linux
+                    distribution.</span></div>
+              </li>
+              <li><b>02</b>
+                <div><strong>Install the package</strong><span>Follow the installation instructions included with the
+                    release.</span></div>
+              </li>
+              <li><b>03</b>
+                <div><strong>Launch clipBQ</strong><span>Open clipBQ from your applications menu or terminal.</span>
+                </div>
+              </li>
+              <li><b>04</b>
+                <div><strong>Sign in</strong><span>Your authenticated session lets clipBQ retrieve and save
+                    history.</span></div>
+              </li>
+            </ol>
+            <a class="download" href="index.html#download">Download for Linux</a>
+          </article>
+
+          <article class="install-card" id="android">
+            <h3>Android</h3>
+            <p>Install clipBQ from the Android app store when the mobile release is available.</p>
+            <ol class="steps">
+              <li><b>01</b>
+                <div><strong>Open Google Play</strong><span>Find the official clipBQ app listing.</span></div>
+              </li>
+              <li><b>02</b>
+                <div><strong>Install clipBQ</strong><span>Tap Install and wait for the app to finish downloading.</span>
+                </div>
+              </li>
+              <li><b>03</b>
+                <div><strong>Sign in</strong><span>Use the same clipBQ account you use on your desktop devices.</span>
+                </div>
+              </li>
+              <li><b>04</b>
+                <div><strong>Enable required access</strong><span>Follow Android's prompts for clipboard
+                    functionality.</span></div>
+              </li>
+            </ol>
+            <a class="download" href="index.html#download">Get it for Android</a>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Important:</strong> Clipboard access behaves differently across operating systems, especially on
+          mobile. The final clipBQ release will explain any OS-specific permissions during onboarding.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>Frequently asked questions</h2>
+        <p class="section-intro">Everything you need to know about getting started with clipBQ.</p>
+
+        <div class="faq-list" id="faqList">
+          <details>
+            <summary>What is clipBQ?</summary>
+            <p>clipBQ is a cross-platform clipboard manager designed to keep your clipboard history in one place across
+              Linux, macOS, Windows, Android and iOS.</p>
+          </details>
+          <details>
+            <summary>Do I need an account?</summary>
+            <p>Yes. An account allows clipBQ to associate your clipboard history with you and synchronize it across your
+              devices.</p>
+          </details>
+          <details>
+            <summary>Can I use the same account on multiple devices?</summary>
+            <p>Yes. Sign in with the same clipBQ account on each supported device to access your clipboard history.</p>
+          </details>
+          <details>
+            <summary>Does clipBQ automatically save everything I copy?</summary>
+            <p>The desktop client can monitor new clipboard content while running. For mobile releases, users push
+              chosen clips to the app for cloud upload.</p>
+          </details>
+          <details>
+            <summary>Is my clipboard history private?</summary>
+            <p>clipBQ enforces access security via Cloud database Row Level Security. Data is protected with encryption
+              and retention controls.</p>
+          </details>
+          <details>
+            <summary>What happens if I am offline?</summary>
+            <p>This initial version requires a network connection to sync. Desktop updates will queue clipboard changes
+              locally when offline.</p>
+          </details>
+          <details>
+            <summary>Can I delete clipboard items?</summary>
+            <p>Yes, the cloud fully supports clearing history. The interface provides fast, easy methods for deleting
+              entries.</p>
+          </details>
+          <details>
+            <summary>Does clipBQ support images and files?</summary>
+            <p>This release focuses on text clipboard history. Image and file support will follow in future updates.</p>
+          </details>
+          <details>
+            <summary>Why do mobile platforms have different clipboard behaviour?</summary>
+            <p>Android and iOS apply specific privacy restrictions to continuous background clipboard access.</p>
+          </details>
+          <details>
+            <summary>What permissions does clipBQ need?</summary>
+            <p>clipBQ requests minimum permissions required for clipboard monitoring and synchronization based on OS
+              features.</p>
+          </details>
+          <details>
+            <summary>Is this app supported on iOS?</summary>
+            <p>Due to security policies that Apple has on iOS devices regarding clipboard copying and sharing
+              , development for this release has been paused, and an app for this platform is not available for now.
+            </p>
+          </details>
+          <details>
+            <summary>Why is the app not working on macOS?</summary>
+            <p>Because this app is built through an automated CI pipeline and is not digitally signed by Apple,
+              macOS will block it by default. If you see a "damaged file" or "unverified developer" warning,
+              use the command <code>xattr -cr /Applications/clipBQ.app</code> to bypass Gatekeeper Bypass after
+              downloading and unzipping the clipBQ.app file</p>
+          </details>
+          <details>
+            <summary>How do I get help?</summary>
+            <p>Once our support channel is ready, links for our documentation, GitHub Discussions, or support email will
+              be added here.</p>
+          </details>
+        </div>
+
+        <div class="cta">
+          <h2>Ready to take your clipboard everywhere?</h2>
+          <p>Install clipBQ, sign in, and keep your workflow moving across devices.</p>
+          <a class="nav-cta" href="index.html#download">Get clipBQ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <span>© 2026 clipBQ</span>
+      <span>One clipboard. Everywhere.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
